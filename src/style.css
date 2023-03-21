@@ -87,6 +87,8 @@ header .container .navbar .nav-list {
   background-color: #111111;
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
+  border: 2px solid #111111;
+  color: white;
 }
 .search input::placeholder{
   color: white;
