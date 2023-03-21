@@ -102,13 +102,35 @@ main{
   box-shadow: rgba(250, 253, 47, 0.35) 5px 20px 30px;
   
 }
-.card-image{
+.card:hover #play{
+  display: block;
+}
+.card-image-container{
   height: 70%;
+  width: 100%;
+  position: relative;
+}
+#play{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.card-image{
+  height: 100%;
   width: 100%;
   background-size: 100% 100%;
   background-position: center;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
+  
+  
+}
+.card-image:hover{
+  opacity: 0.4;
 }
 .card-content{
   height: 15%;
