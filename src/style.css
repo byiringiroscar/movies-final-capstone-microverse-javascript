@@ -25,3 +25,29 @@ header .container .navbar {
   align-items: center;
   position: static;
 }
+
+header .container .navbar .logo .logo-link {
+  text-decoration: none;
+}
+
+header .container .navbar .nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 500px;
+  height: inherit;
+}
+
+header .container .navbar .nav-list .nav-item {
+  font-size: 24px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+header .container .navbar .nav-list .nav-item:hover {
+  border-bottom: 4px solid hsl(84, 100%, 59%);
+  box-shadow: -2px -2px 4px 5px hsla(84, 94%, 58%, 0.679);
+  border-radius: 4px;
+}
