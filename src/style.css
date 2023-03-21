@@ -6,6 +6,7 @@
 }
 body{
   background-color: #111111;
+  height: auto;
 }
 
 .container {
@@ -15,9 +16,11 @@ body{
 }
 
 header {
-  width: 100%;
-  height: 100px;
-  border-bottom: 1px solid hsl(330, 100%, 71%);
+  height: 65px; 
+  background: #000; 
+  margin-bottom: 25px; 
+  position: relative; 
+  z-index: 99
 }
 
 header .container .navbar {
@@ -27,7 +30,6 @@ header .container .navbar {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  position: static;
 }
 
 #logo{
@@ -46,37 +48,61 @@ header .container .navbar .nav-list {
   justify-content: space-evenly;
   align-items: center;
   width: 500px;
-  height: inherit;
+  height: auto;
 }
 
-header .container .navbar .nav-list .nav-item {
-  font-size: 24px;
-  padding: 20px;
+.nav-item-link{
+  font-size: 20px;
+  padding-top: 50px;
   cursor: pointer;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3;
+  
+}
+.nav-item-link:hover{
+  color: #FFE400;
+}
+.nav-item-link::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: #FFE400;
+  width: 0;
+  transition: width 0.3s ease-in-out;
+
+}
+.nav-item-link:hover::before {
+  width: 100%;
+  
 }
 
-header .container .navbar .nav-list .nav-item:hover {
-  border-bottom: 4px solid hsl(84, 100%, 59%);
-  box-shadow: -2px -2px 4px 5px hsla(84, 94%, 58%, 0.679);
-  border-radius: 4px;
-}
-
-header .container .navbar .search input {
-  width: 250px;
-  height: 75px;
-  border: 2px solid hsl(84, 100%, 59%);
+.search input {
   padding: 10px;
   border-radius: 8px;
-  font: 24px sans-serif;
+  background-color: #111111;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+.search input::placeholder{
+  color: white;
 }
 
 header .container .navbar .search input:focus-visible {
-  border: none;
+  border: 1px solid #FFE400;
+  outline: 1px solid #FFE400;;
 }
 /* main style start */
 
 main{
   width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
 }
 .movie-container{
   height: 100%;
@@ -85,6 +111,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: center;
 }
 .card{
   height: 270px;
@@ -188,10 +215,9 @@ main{
 footer{
   position: absolute;
   bottom: 0;
-  right: 0;
-  left: 0;
   width: 100%;
-  height: 80px;
+  height: 50px;
+  width: 100%;
   border-top: 2px solid black;
   display: flex;
   align-items: center;
