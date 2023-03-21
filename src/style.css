@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -24,6 +25,11 @@ header .container .navbar {
   justify-content: space-between;
   align-items: center;
   position: static;
+}
+
+#logo{
+  height: 100px;
+  width: 100px;
 }
 
 header .container .navbar .logo .logo-link {
