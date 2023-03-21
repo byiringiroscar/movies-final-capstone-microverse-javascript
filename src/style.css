@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: #111111;
+}
 
 .container {
   width: 85%;
@@ -69,4 +72,30 @@ header .container .navbar .search input {
 
 header .container .navbar .search input:focus-visible {
   border: none;
+}
+
+
+/* start footer style */
+
+footer{
+  height: 80px;
+  width: 100%;
+  border-top: 2px solid black;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+#logo-footer{
+  height: 100%;
+  width: 120px;
+}
+.foot-desc{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
 }
