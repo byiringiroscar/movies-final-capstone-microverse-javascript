@@ -102,14 +102,6 @@ main{
   box-shadow: rgba(250, 253, 47, 0.35) 5px 20px 30px;
   
 }
-.card:hover #play{
-  display: block;
-}
-.card-image-container{
-  height: 70%;
-  width: 100%;
-  position: relative;
-}
 #play{
   height: 40px;
   width: 40px;
@@ -119,6 +111,13 @@ main{
   transform: translate(-50%, -50%);
   display: none;
 }
+
+.card-image-container{
+  height: 70%;
+  width: 100%;
+  position: relative;
+}
+
 .card-image{
   height: 100%;
   width: 100%;
@@ -126,12 +125,14 @@ main{
   background-position: center;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-  
-  
+}
+.card-image-container:hover #play{
+  display: block;
 }
 .card-image:hover{
   opacity: 0.4;
 }
+
 .card-content{
   height: 15%;
   width: 100%;
