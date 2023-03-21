@@ -73,7 +73,86 @@ header .container .navbar .search input {
 header .container .navbar .search input:focus-visible {
   border: none;
 }
+/* main style start */
 
+main{
+  width: 100%;
+}
+.movie-container{
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.card{
+  height: 270px;
+  width: 190px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 10px;
+  transition: 0.3s;
+  
+}
+.card:hover{
+  box-shadow: rgba(250, 253, 47, 0.35) 5px 20px 30px;
+}
+.card-image{
+  height: 70%;
+  width: 100%;
+  background-size: 100% 100%;
+  background-position: center;
+}
+.card-content{
+  height: 15%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3px;
+}
+.card-button{
+  height: 15%;
+  width: 100%;
+  background-color: #FFE400;
+  border: none;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  font-size: 17px;
+}
+.card-button:hover{
+  color: #FFE400;
+  background-color: white;
+  border: 0.4px solid #FFE400;
+  
+}
+.movie-title{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.movie-title:hover{
+  color: #FFE400;
+}
+.like-stat{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.like-stat:hover{
+  color: #FFE400;
+}
+#like{
+  height: 17px;
+  width: 17px;
+}
 
 /* start footer style */
 
@@ -103,3 +182,4 @@ footer{
   font-size: 18px;
   font-weight: 500;
 }
+/* footer style end */
