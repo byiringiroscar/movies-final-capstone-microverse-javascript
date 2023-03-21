@@ -51,3 +51,16 @@ header .container .navbar .nav-list .nav-item:hover {
   box-shadow: -2px -2px 4px 5px hsla(84, 94%, 58%, 0.679);
   border-radius: 4px;
 }
+
+header .container .navbar .search input {
+  width: 250px;
+  height: 75px;
+  border: 2px solid hsl(84, 100%, 59%);
+  padding: 10px;
+  border-radius: 8px;
+  font: 24px sans-serif;
+}
+
+header .container .navbar .search input:focus-visible {
+  border: none;
+}
