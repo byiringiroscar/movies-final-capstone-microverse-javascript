@@ -21,6 +21,7 @@ const update = async () => {
   let html = '';
   for (let i = 0; i < allData.length; i += 1) {
     const singleData = allData[i];
+    console.log(singleData);
     html += `<div class="card">
         <div class="card-image-container">
             <img class="card-image" src="${singleData.image.medium}" alt="">

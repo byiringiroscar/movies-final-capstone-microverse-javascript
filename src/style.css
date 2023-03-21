@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +33,22 @@ header {
 #logo{
   height: 100px;
   width: 100px;
+  display: flex;
+}
+.logo{
+  display: flex;
+  gap: 2px;
+}
+.logo-title{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-family: 700;
+}
+.logo-title span{
+  color: #FFE400;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  font-size: 35px;
 }
 
 header .navbar .logo .logo-link {
@@ -167,6 +183,8 @@ main{
   align-items: center;
   justify-content: space-between;
   padding: 0 3px;
+  background-color: #111111;
+  border: 0.1px solid #2b2a27;
 }
 .card-button{
   height: 10%;
@@ -192,17 +210,19 @@ main{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: 0.3s;
+  color: white;
 }
 .movie-title:hover{
-  color: black;
+  color: #FFE400;
 }
 .like-stat{
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   transition: 0.3s;
+  color: white;
 }
 .like-stat:hover{
-  color: color: black;
+  color: #FFE400;
 }
 #like{
   height: 17px;
@@ -223,6 +243,7 @@ footer{
   justify-content: space-between;
   padding: 0 100px;
   background-color: #000000;
+  padding: 40px;
   
 }
 
@@ -235,5 +256,10 @@ footer{
   font-family: 'Poppins', sans-serif;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+  transition: 0.3;
+}
+.foot-desc:hover{
+  color: #FFE400;
 }
 /* footer style end */
