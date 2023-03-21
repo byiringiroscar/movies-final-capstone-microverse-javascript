@@ -1,3 +1,3 @@
 module.exports = {
-    setupFilesAfterEnv: ['jest-localstorage-mock'],
-  };
+  setupFilesAfterEnv: ['jest-localstorage-mock'],
+};
