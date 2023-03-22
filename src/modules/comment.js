@@ -13,11 +13,11 @@ const displayPopUp = async (element, index) => {
   innerHTML += `<div id = "${element.id}" class="popup-blur">
       <div class="popup-countainer">
       <i class="fa fa-close"></i>
-          <div class ="img-container"><img class="comment-img" src="${element.image.original}" alt="">
+          <div class ="img-container"><img class="comment-img" src="${element.image.medium}" alt="">
           </div>
           <h2 class="title">${element.name}</h2>
           <div class="detail">
-              <p class="langauge">Language: ${element.language}</p>
+              <p class="langauge">Language: ${element.language}</p> 
               <p class="runtime">Runtime: ${element.runtime} mins</p>
           </div>
           <div class ="summary"> 
