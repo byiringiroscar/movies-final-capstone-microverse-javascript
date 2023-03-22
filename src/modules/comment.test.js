@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-import Movies from './API.js';
+import Movies from './api.js';
 
 const movies = new Movies();
 const getMovieCount = (items) => {
