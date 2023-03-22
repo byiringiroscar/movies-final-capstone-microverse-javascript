@@ -1,9 +1,10 @@
 import { getComment, postComment } from './API.js';
-import { getCommentCount } from './counters.js';
+import getCommentCount from './counters.js';
 
 const appendComment = (comment) => {
   const commentList = document.createElement('li');
-  commentList.innerHTML = ` <span class ="date">${comment.creation_date} </span> <span class="name">${comment.username} </span><span class="comment">${comment.comment}</span>`;
+  commentList.innerHTML = ` <span class ="date">${comment.creation_date} </span>
+   <span class="name">${comment.username} </span><span class="comment">${comment.comment}</span>`;
   return commentList;
 };
 
