@@ -18,7 +18,7 @@ const movie = new Movies();
 const update = async () => {
   const movieContainer = document.querySelector('.movie-container');
   const allData = await movie.getMovies();
-  const items = allData.slice(0, 8);
+  const items = allData.slice(0, 9);
   let html = '';
   // for (let i = 0; i < 1; i += 1) {
   //   const singleData = allData[i];
@@ -27,7 +27,7 @@ const update = async () => {
   //       <div class="card-image-container">
   //           <img class="card-image" src="${singleData.image.medium}" alt="">
   //           <img src="./play.png" alt="" id="play">
-  //       </div> 
+  //       </div>
   //       <div class="card-content">
   //           <p class="movie-title">${singleData.name}</p>
   //           <img src="./like.png" alt="like" id="like">
@@ -40,7 +40,7 @@ const update = async () => {
     const card = document.createElement('div');
     card.className = 'card';
     card.setAttribute('data-index', index);
-    html += `
+    html = `
                 <div class="card-image-container">
                     <img class="card-image" src="${element.image.medium}" alt="">
                     <img src="./play.png" alt="" id="play">
@@ -54,6 +54,7 @@ const update = async () => {
               `;
     card.innerHTML = html;
     movieContainer.append(card);
+    // movieContainer.innerHTML = html;
     const commentButton = document.querySelector(`.card[data-index="${index}"] .card-button`);
     commentButton.addEventListener('click', async () => {
       displayPopUp(element, index);
