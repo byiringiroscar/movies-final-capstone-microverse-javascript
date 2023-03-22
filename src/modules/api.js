@@ -1,5 +1,6 @@
 const involvementId = 'VdUaJZjJhUjlpm3843JM';
 const commentUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${involvementId}/comments`;
+const likeUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${involvementId}/likes/`;
 
 // API for post Comment
 
