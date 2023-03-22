@@ -28,7 +28,6 @@ const update = async () => {
   //           <img class="card-image" src="${singleData.image.medium}" alt="">
   //           <img src="./play.png" alt="" id="play">
   //       </div>
-        
   //       <div class="card-content">
   //           <p class="movie-title">${singleData.name}</p>
   //           <img src="./like.png" alt="like" id="like">
@@ -38,20 +37,23 @@ const update = async () => {
   //   </div>`;
   // }
   items.forEach((element, index) => {
-    html += `<div class="card" data-index="${index}">
-        <div class="card-image-container">
-            <img class="card-image" src="${element.image.medium}" alt="">
-            <img src="./play.png" alt="" id="play">
-        </div>
-        
-        <div class="card-content">
-            <p class="movie-title">${element.name}</p>
-            <img src="./like.png" alt="like" id="like">
-            <p class="like-stat">2 likes</p>
-        </div>
-        <button class="card-button" id="${element.id}" type="submit">Comments</button>
-    </div>`;
-    movieContainer.innerHTML = html;
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.setAttribute('data-index', index);
+    html += `
+                <div class="card-image-container">
+                    <img class="card-image" src="${element.image.medium}" alt="">
+                    <img src="./play.png" alt="" id="play">
+                </div>
+                <div class="card-content">
+                    <p class="movie-title">${element.name}</p>
+                    <img src="./like.png" alt="like" id="like">
+                    <p class="like-stat">2 likes</p>
+                </div>
+                <button class="card-button" id="${element.id}" type="submit">Comments</button>
+              `;
+    card.innerHTML = html;
+    movieContainer.append(card);
     const commentButton = document.querySelector(`.card[data-index="${index}"] .card-button`);
     commentButton.addEventListener('click', async () => {
       displayPopUp(element, index);
