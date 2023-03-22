@@ -11,9 +11,11 @@ const update = async () => {
   const movieContainer = document.querySelector('.movie-container');
   const allLike = await movie.getLike();
   const allData = await movie.getMovies();
-  const items = allData.slice(0, 9);
+  const items = allData.slice(0, 15);
   const likeFiltered = allLike.filter((like) => items.find((item) => like.item_id === item.id));
   const sortedLike = likeFiltered.sort((a, b) => a.item_id - b.item_id);
+  const movieResult = document.querySelector('.movie-counter');
+  movieResult.innerHTML = `<h2 class="movie-result">Movies Total: <span>${items.length}</span></h2>`;
   let html = '';
   items.forEach((element, index) => {
     const card = document.createElement('div');

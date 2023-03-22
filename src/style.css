@@ -259,7 +259,7 @@ main{
   width: 100%;
   height: 100%;
   z-index: 15;
-  padding: 1rem 1rem;
+  padding: 2rem 2rem;
   overflow-y: auto;
   color: #fff;
   opacity: 1;
@@ -272,25 +272,29 @@ main{
   justify-content: center;
   align-items: center;
   margin: 0 5%;
-  gap: 15px;
+  gap: 4px;
   background: #22323d;
 }
 
 .img-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 5px;
+  width: 100%;
+  height: 100%;
 }
 
 .comment-img {
   margin: 1% 0;
   height: 300px;
+  width: 400px;
 }
 
 .fa-close {
   font-size: 30px;
   align-self: flex-end;
   margin: 5px 20px 0 0;
+  cursor: pointer;
 }
 
 .detail {
@@ -322,7 +326,22 @@ main{
   width: 90%;
   margin: 2%;
 }
-
+.form button{
+  height: 40px;
+  color: black;
+  border: 1px solid #FFE400;
+  outline: 1px solid #FFE400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.form button:hover{
+  background-color: #FFE400;
+  outline: none;
+  border: none;
+}
 #submit {
   width: 100%;
   margin-bottom: 10px;
@@ -332,12 +351,65 @@ input {
   color: #1e2c36;
   font-size: large;
   padding: 1%;
+  border-radius: 5px;
+  
+}
+input:focus{
+  outline: 1px solid #FFE400;
+  border: 1px solid #FFE400;
 }
 
 textarea {
   color: #1e2c36;
   font-size: large;
   padding: 1%;
+  border-radius: 5px;
+}
+textarea:focus{
+  outline: 1px solid #FFE400;
+  border: 1px solid #FFE400;
+}
+
+.popup-countainer .title{
+  color: #FFE400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.detail .language{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+.summary h4{
+  color: #FFE400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.summary p{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.comment-section h3{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+.comment-section h3 span{
+  color: #FFE400;
+}
+.commentList li{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+}
+.comment-section h4{
+  color: #FFE400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 /* end popup */
 
@@ -378,3 +450,22 @@ footer{
 }
 /* footer style end */
 
+/* movie counter start */
+
+.movie-counter{
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  padding-left: 100px;
+}
+.movie-result{
+  color: #FFE400;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+
+}
+.movie-result span{
+  color: white;
+}
