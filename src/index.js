@@ -1,4 +1,5 @@
 import './style.css';
+import displayPopUp from './modules/comment.js';
 // import './logo.png';
 
 const movieContainer = document.querySelector('.movie-container');
@@ -39,3 +40,20 @@ const update = async () => {
   movieContainer.innerHTML = html;
 };
 update();
+
+const likeButton = document.querySelector(
+  `.item[data-index="${index}"] .fa-heart`,
+);
+
+const commentButton = document.querySelector(`.item[data-index="${index}"] .commentBtn`);
+commentButton.addEventListener('click', async () => {
+  displayPopUp(element, index);
+});
+
+likeButton.addEventListener('click', async () => {
+  await likes(index);
+  const data = await getLikes();
+  const itemIndex = await data.filter((item) => item.item_id === index);
+
+  getNumberOfLikes(itemIndex[0]);
+});
