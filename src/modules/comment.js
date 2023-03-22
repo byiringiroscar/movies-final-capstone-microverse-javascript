@@ -1,4 +1,4 @@
-import { getComment, postComment } from './API.js';
+import { getComment, postComment } from './api.js';
 import getCommentCount from './counters.js';
 
 const appendComment = (comment) => {
