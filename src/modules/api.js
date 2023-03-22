@@ -5,9 +5,36 @@ const likeUrl = `https://us-central1-involvement-api.cloudfunctions.net/capstone
 // API for post Comment
 
 class Movies {
+  postLike = async (likeId) => {
+    const data = {
+      item_id: parseInt(likeId, 10),
+    };
+    const response = await fetch(
+      likeUrl,
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      },
+    );
+    return response;
+  };
+
   getMovies = async () => {
     try {
       const response = await fetch('https://api.tvmaze.com/shows');
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      return error;
+    }
+  }
+
+  getLike = async () => {
+    try {
+      const response = await fetch(likeUrl);
       const data = await response.json();
       return data;
     } catch (error) {
