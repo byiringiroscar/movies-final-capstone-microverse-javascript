@@ -1,4 +1,4 @@
-// import './style.css';
+import './style.css';
 // import './logo.png';
 
 const movieContainer = document.querySelector('.movie-container');
