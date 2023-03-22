@@ -1,6 +1,8 @@
 import './style.css';
 import displayPopUp from './modules/comment.js';
-// import './logo.png';
+import './logo.png';
+import './play.png';
+import './like.png';
 class Movies {
     getMovies = async () => {
       try {
