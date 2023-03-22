@@ -4,7 +4,7 @@ import displayPopUp from './modules/comment.js';
 class Movies {
     getMovies = async () => {
       try {
-        const response = await fetch('https://api.tvmaze.com/shows?page=1');
+        const response = await fetch('https://api.tvmaze.com/shows');
         const data = await response.json();
         return data;
       } catch (error) {
@@ -18,8 +18,7 @@ const movie = new Movies();
 const update = async () => {
   const movieContainer = document.querySelector('.movie-container');
   const allData = await movie.getMovies();
-  const items = allData.slice(0, 6);
-  console.log(items);
+  const items = allData.slice(0, 8);
   let html = '';
   // for (let i = 0; i < 1; i += 1) {
   //   const singleData = allData[i];
