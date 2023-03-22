@@ -27,7 +27,7 @@ const update = async () => {
   //       <div class="card-image-container">
   //           <img class="card-image" src="${singleData.image.medium}" alt="">
   //           <img src="./play.png" alt="" id="play">
-  //       </div>
+  //       </div> 
   //       <div class="card-content">
   //           <p class="movie-title">${singleData.name}</p>
   //           <img src="./like.png" alt="like" id="like">
