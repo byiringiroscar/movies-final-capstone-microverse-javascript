@@ -23,7 +23,11 @@ const update = async () => {
                 </div>
                 <div class="card-content">
                     <p class="movie-title">${element.name}</p>
-                    <img src="./like.png" alt="like" id="like">
+                    <button class="heart-btn">
+                      <i class="fas fa-heart"></i>
+                    </button>
+
+                  
                     <p class="like-stat">2 likes</p>
                 </div>
                 <button class="card-button" id="${element.id}" type="submit">Comments</button>

@@ -214,6 +214,7 @@ main{
   font-weight: 500;
   transition: 0.3s;
   color: white;
+  width: 50%;
 }
 .movie-title:hover{
   color: #FFE400;
@@ -227,9 +228,22 @@ main{
 .like-stat:hover{
   color: #FFE400;
 }
-#like{
-  height: 17px;
-  width: 17px;
+.heart-btn {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 7px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.heart-btn:hover {
+  background-color: #FFE400;
+}
+
+.fa-heart {
+  color: red;
 }
 
 /* Popup */
@@ -361,3 +375,4 @@ footer{
   color: #FFE400;
 }
 /* footer style end */
+
