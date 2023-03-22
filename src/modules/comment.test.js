@@ -2,8 +2,9 @@
  * @jest-environment jsdom
  */
 
-import { getComment } from './API.js';
+import Movies from './api.js';
 
+const movies = new Movies();
 const getMovieCount = (items) => {
   const result = items.length;
   return result;
@@ -51,7 +52,7 @@ describe('Comments counter test', () => {
    + '  <ul id="comments"></ul>'
    + '</div>';
     const commentsList = document.getElementById('comments');
-    const res = await getComment('item1');
+    const res = await movies.getComment('item1');
     res.forEach((data) => {
       commentsList.appendChild(appendComment(data));
     });
