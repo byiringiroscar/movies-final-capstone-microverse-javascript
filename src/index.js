@@ -41,19 +41,7 @@ const update = async () => {
 };
 update();
 
-const likeButton = document.querySelector(
-  `.item[data-index="${index}"] .fa-heart`,
-);
-
 const commentButton = document.querySelector(`.item[data-index="${index}"] .commentBtn`);
 commentButton.addEventListener('click', async () => {
   displayPopUp(element, index);
-});
-
-likeButton.addEventListener('click', async () => {
-  await likes(index);
-  const data = await getLikes();
-  const itemIndex = await data.filter((item) => item.item_id === index);
-
-  getNumberOfLikes(itemIndex[0]);
 });
