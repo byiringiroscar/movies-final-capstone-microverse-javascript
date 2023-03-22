@@ -18,12 +18,12 @@ global.fetch = jest.fn(() => {
   const testData = [
     {
       item_id: 'item1',
-      username: 'Basim',
+      username: 'imran',
       comment: 'Test1',
     },
     {
       item_id: 'item1',
-      username: 'Dheeraj',
+      username: 'oscar',
       comment: 'Test2',
     },
   ];
