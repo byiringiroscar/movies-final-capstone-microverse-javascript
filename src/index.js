@@ -1,8 +1,6 @@
 import './style.css';
 import displayPopUp from './modules/comment.js';
 // import './logo.png';
-
-const movieContainer = document.querySelector('.movie-container');
 class Movies {
     getMovies = async () => {
       try {
@@ -18,30 +16,47 @@ class Movies {
 const movie = new Movies();
 
 const update = async () => {
+  const movieContainer = document.querySelector('.movie-container');
   const allData = await movie.getMovies();
+  const items = allData.slice(0, 6);
+  console.log(items);
   let html = '';
-  for (let i = 0; i < allData.length; i += 1) {
-    const singleData = allData[i];
-    console.log(singleData);
-    html += `<div class="card">
+  // for (let i = 0; i < 1; i += 1) {
+  //   const singleData = allData[i];
+  //   console.log(singleData);
+  //   html += `<div class="card" data-index="${i}">
+  //       <div class="card-image-container">
+  //           <img class="card-image" src="${singleData.image.medium}" alt="">
+  //           <img src="./play.png" alt="" id="play">
+  //       </div>
+        
+  //       <div class="card-content">
+  //           <p class="movie-title">${singleData.name}</p>
+  //           <img src="./like.png" alt="like" id="like">
+  //           <p class="like-stat">2 likes</p>
+  //       </div>
+  //       <button class="card-button" id="commentBtn">Comments</button>
+  //   </div>`;
+  // }
+  items.forEach((element, index) => {
+    html += `<div class="card" data-index="${index}">
         <div class="card-image-container">
-            <img class="card-image" src="${singleData.image.medium}" alt="">
+            <img class="card-image" src="${element.image.medium}" alt="">
             <img src="./play.png" alt="" id="play">
         </div>
         
         <div class="card-content">
-            <p class="movie-title">${singleData.name}</p>
+            <p class="movie-title">${element.name}</p>
             <img src="./like.png" alt="like" id="like">
             <p class="like-stat">2 likes</p>
         </div>
-        <button class="card-button">Comments</button>
+        <button class="card-button" id="${element.id}" type="submit">Comments</button>
     </div>`;
-  }
-  movieContainer.innerHTML = html;
+    movieContainer.innerHTML = html;
+    const commentButton = document.querySelector(`.card[data-index="${index}"] .card-button`);
+    commentButton.addEventListener('click', async () => {
+      displayPopUp(element, index);
+    });
+  });
 };
 update();
-
-const commentButton = document.querySelector(`.item[data-index="${index}"] .commentBtn`);
-commentButton.addEventListener('click', async () => {
-  displayPopUp(element, index);
-});
