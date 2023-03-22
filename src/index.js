@@ -3,18 +3,7 @@ import displayPopUp from './modules/comment.js';
 import './logo.png';
 import './play.png';
 import './like.png';
-
-class Movies {
-    getMovies = async () => {
-      try {
-        const response = await fetch('https://api.tvmaze.com/shows');
-        const data = await response.json();
-        return data;
-      } catch (error) {
-        return error;
-      }
-    }
-}
+import Movies from './modules/api.js';
 
 const movie = new Movies();
 

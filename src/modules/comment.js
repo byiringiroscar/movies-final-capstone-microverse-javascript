@@ -1,6 +1,7 @@
-import { getComment, postComment } from './api.js';
 import getCommentCount from './counters.js';
+import Movies from './api.js';
 
+const movie = new Movies();
 const appendComment = (comment) => {
   const commentList = document.createElement('li');
   commentList.innerHTML = ` <span class ="date">${comment.creation_date} </span>
@@ -44,7 +45,7 @@ const displayPopUp = async (element, index) => {
   });
 
   const commentList = document.querySelector('.commentList');
-  const comments = await getComment(index);
+  const comments = await movie.getComment(index);
   if (comments.length >= 1) {
     comments.forEach((comment) => {
       commentList.appendChild(appendComment(comment));
@@ -58,12 +59,12 @@ const displayPopUp = async (element, index) => {
     const nameInput = document.querySelector('#name');
     const textInput = document.querySelector('#text');
     if (nameInput !== '' && textInput !== '') {
-      await postComment(index, nameInput.value, textInput.value);
+      await movie.postComment(index, nameInput.value, textInput.value);
       const commentList = document.querySelector('.commentList');
       commentList.innerHTML = '';
       nameInput.value = '';
       textInput.value = '';
-      const comments = await getComment(index);
+      const comments = await movie.getComment(index);
       comments.forEach((comment) => {
         commentList.appendChild(appendComment(comment));
       });
