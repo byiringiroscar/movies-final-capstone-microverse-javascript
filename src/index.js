@@ -13,7 +13,7 @@ const update = async () => {
   const allData = await movie.getMovies();
   const items = allData.slice(0, 15);
   const likeFiltered = allLike.filter((like) => items.find((item) => like.item_id === item.id));
-  const sortedLike = likeFiltered.sort((a, b) => a.item_id - b.item_id);
+  const sortedLike = await likeFiltered.sort((a, b) => a.item_id - b.item_id);
   const movieResult = document.querySelector('.movie-counter');
   movieResult.innerHTML = `<h2 class="movie-result">Movies Total: <span>${items.length}</span></h2>`;
   let html = '';
@@ -56,4 +56,5 @@ const update = async () => {
     });
   });
 };
-window.onload = update();
+
+window.onload = () => update();
