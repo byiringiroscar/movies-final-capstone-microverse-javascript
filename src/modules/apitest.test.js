@@ -1,5 +1,4 @@
 import Movies from './api.js';
-import 'jest-environment-jsdom';
 
 require('jest-localstorage-mock');
 
