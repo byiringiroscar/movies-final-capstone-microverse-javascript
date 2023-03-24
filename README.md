@@ -1,8 +1,33 @@
 <a name="readme-top"></a>
 
+<!--
+HOW TO USE:
+This is an example of how you may give instructions on setting up your project locally.
+
+Modify this file to match your project and remove sections that don't apply.
+
+REQUIRED SECTIONS:
+- Table of Contents
+- About the Project
+  - Built With
+  - Live Demo
+- Getting Started
+- Authors
+- Future Features
+- Contributing
+- Show your support
+- Acknowledgements
+- License
+
+OPTIONAL SECTIONS:
+- FAQ
+
+After you're finished please remove all the comments and instructions!
+-->
+
 <div align="center">
-  <img src="toad.gif" alt="logo" width="140"  height="auto" />
-  <br/>
+  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
+
 
   <h3><b>Capstone Microverse JavaScript Project with Movies API</b></h3>
 
@@ -18,6 +43,10 @@
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
@@ -29,49 +58,33 @@
 
 # 📖 [Capstone JS Project] <a name="about-project"></a>
 
-Capstone Microverse JavaScript Project with Movies API webapp displays movie's name, poster, like & comments. It also allows user can submit their comments and likes. All data is preserved thanks to the external movies API service. To develop the website using HTML, CSS, JavaScript , webpack
+**[Capstone JS Project]** Capstone Microverse JavaScript Project with Movies API webapp displays movie's name, poster, like & comments. It also allows user to submit their comments and likes. All data is preserved thanks to the external movies API service. To develop the website using HTML, CSS, JavaScript , webpack
 
 ## 🛠 Built With <a name="built-with"></a>
 
-This project is built with : 1. HTML 2. CSS 3. JavaScript 4. Node package module 5. webpack
-
 ### Tech Stack <a name="tech-stack"></a>
 
-For this projec design I am using form to create localstorage data and class object array to update the page.
 
-<!--
 <details>
   <summary>Client</summary>
   <ul>
-    <li><a href="#">HTML CSS</a></li>
+    <li><a href="https://html.org/">HTML</a></li>
+    <li><a href="https://javascript.org/">Javascript</a></li>
+    <li><a href="https://css.org/">CSS</a></li>
+    <li><a href="https://googlefont.com/">googleFont</a></li>
+    <li><a href="https://googlefont.com/">API</a></li>
   </ul>
 </details>
--->
-<!--
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
--->
-<!--
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
--->
+
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[API Movies ]**
-  > Create Read Update API item.
-  <!--
-  - **[key_feature_2]**
-  - **[key_feature_3]** -->
+
+- **[Movie List ]**
+- **[Add Like ]**
+- **[Add comment ]**
+- **[Good Interface ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,9 +92,7 @@ For this projec design I am using form to create localstorage data and class obj
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> You can live demo form here.
-
-- No live setup yet.
+- [Live Demo Link](https://byiringiroscar.github.io/movies-final-capstone-microverse-javascript/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -89,25 +100,87 @@ For this projec design I am using form to create localstorage data and class obj
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> For using this porject simple colne this repo and run it in your local computer.
-> https://github.com/byiringiroscar/movies-final-capstone-microverse-javascript.git
+To get a local copy up and running, follow these steps.
 
-In order to run this project you need: 1. A computer 2. A internet Browser. 3. Clone git :
-4.open index.html with your browser or text eidtor
+### Prerequisites
 
+In order to run this project you need:
+<ul>
+    <li><a href="https://code.visualstudio.com/">vscode</a></li>
+    <li><a href="#!">liveserver extension</a></li>
+    <li><a href="#!">browser</a></li>
+    <li><a href="#!">Node js</a></li>
+  </ul>
+
+<!--
+Example command:
+
+```sh
+ gem install rails
+```
+ -->
+
+### Setup
+
+- Clone this repository to your desired folder:
+  **[kindly open command prompt in desired folder]**
+- Then use this command in command prompt or gitbash
+  **[git clone https://github.com/byiringiroscar/movies-final-capstone-microverse-javascript ]**
+
+
+<!--
+Example commands:
+
+```sh
+  cd my-folder
+  git clone git@github.com:myaccount/my-project.git
+```
+--->
+
+### Install
+
+
+- Install this project with: 
+    **[cd movies-final-capstone-microverse-javascript ]**
+
+<!--
+Example command:
+
+```sh
+  cd my-project
+  gem install
+```
+--->
+
+### Usage
+
+
+To run the project make sure node js installed then , execute the following command: 
+- npm install
+- npm start
+
+<!--
+Example command:
+
+```sh
+  rails server
+```
+--->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
-## 👤 Author <a name="authors"></a>
+## 👥 Authors <a name="authors"></a>
 
-- Imran Hossain
+
+👤 **Oscar Byiringiro**
+
+- GitHub: [@githuboscar](https://github.com/byiringiroscar)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/)
+
+👤  **Imran Hossain**
+
 - GitHub: [@imranhossainemi](https://github.com/imranhossainemi)
-
-## 👤 Author <a name="authors"></a>
-
-- Oscar Byiringiro
-- GitHub: [@byiringiroscar](https://github.com/byiringiroscar)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +188,9 @@ In order to run this project you need: 1. A computer 2. A internet Browser. 3. C
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> In future going add more style to UX
+
+- [ ] **[Add view movie live]**
+- [ ] **[Add Pagination]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -133,7 +208,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Follow and Support our work
+If you like this project you can buy me cofee here [link](https://www.linkedin.com/in/oscar-byiringiro-9baa8313a/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -141,13 +216,17 @@ Feel free to check the [issues page](../../issues/).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse and all my coding partners.
-</a>
+- **I would like to thank microverse for make this thing happen and my partner for strong advise and explaination**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
-</a><br />This work is licensed under a <a rel="license" href="./LICENSE">mit License</a>.
+This project is [MIT](./MIT.md) licensed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
