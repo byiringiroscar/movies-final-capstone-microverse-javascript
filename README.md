@@ -123,7 +123,9 @@ Example command:
 ### Setup
 
 - Clone this repository to your desired folder:
-  **[https://github.com/byiringiroscar/movies-final-capstone-microverse-javascript ]**
+  **[kindly open command prompt in desired folder]**
+- Then use this command in command prompt or gitbash
+  **[git clone https://github.com/byiringiroscar/movies-final-capstone-microverse-javascript ]**
 
 
 <!--
@@ -138,7 +140,8 @@ Example commands:
 ### Install
 
 
-Install this project with: cd movies-final-capstone-microverse-javascript
+- Install this project with: 
+    **[cd movies-final-capstone-microverse-javascript ]**
 
 <!--
 Example command:
